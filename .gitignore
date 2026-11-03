@@ -1,0 +1,11 @@
+.hutch/
+.cottontail-tmp/
+node_modules/
+build/
+dist/
+artifacts/
+*.tsbuildinfo
+
+# OS junk
+.DS_Store
+Thumbs.db

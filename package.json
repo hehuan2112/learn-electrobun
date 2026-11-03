@@ -1,0 +1,18 @@
+{
+	"name": "learn-electrobun",
+	"version": "0.1.0",
+	"type": "module",
+	"private": true,
+	"description": "A small Electrobun desktop chat app (Bun + Vue 3 + TypeScript) for learning",
+	"devDependencies": {
+		"@tailwindcss/vite": "^4.3.4",
+		"@types/bun": "latest",
+		"@vitejs/plugin-vue": "^6.0.10",
+		"concurrently": "^9.2.5",
+		"tailwindcss": "^4.3.4",
+		"typescript": "~5.9.3",
+		"vite": "^7.3.7",
+		"vue": "^3.5.44",
+		"vue-tsc": "^3.3.13"
+	}
+}

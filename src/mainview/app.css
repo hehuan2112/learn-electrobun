@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+/* Warm neutral palette. Columns are separated by background tone, not borders. */
+:root {
+  --canvas: #faf9f5;
+  --sidebar: #f2f0e8;
+  --surface: #ffffff;
+  --hover: #e9e6dc;
+  --text: #1f1e1d;
+  --muted: #75736b;
+  --accent: #c8643f;
+  --accent-fg: #ffffff;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --canvas: #262624;
+    --sidebar: #1f1e1d;
+    --surface: #30302e;
+    --hover: #393836;
+    --text: #f3f1ea;
+    --muted: #a19e95;
+    --accent: #d97757;
+    --accent-fg: #1f1e1d;
+    color-scheme: dark;
+  }
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-sidebar: var(--sidebar);
+  --color-surface: var(--surface);
+  --color-hover: var(--hover);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  background: var(--canvas);
+  color: var(--text);
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+
+.selectable {
+  user-select: text;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--hover);
+  border-radius: 4px;
+}
